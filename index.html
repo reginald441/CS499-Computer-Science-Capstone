@@ -3,181 +3,117 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Reginald Kargbo's CS 499 Computer Science Capstone ePortfolio featuring software engineering, algorithms and data structures, and database projects.">
-  <title>Reginald Kargbo | Computer Science ePortfolio</title>
+  <meta name="description" content="Reginald Kargbo's CS 499 Computer Science Capstone ePortfolio featuring software engineering, algorithms, and database projects.">
+  <title>Reginald Kargbo | CS 499 ePortfolio</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <header class="site-header">
-    <div class="shell nav-wrap">
-      <a class="brand" href="#home" aria-label="Return to home">
+    <div class="container nav-wrap">
+      <a class="brand" href="#home" aria-label="Home">
         <span class="brand-mark">RK</span>
-        <span class="brand-copy"><strong>Reginald Kargbo</strong><small>Computer Science ePortfolio</small></span>
+        <span class="brand-text"><strong>Reginald Kargbo</strong><small>CS 499 ePortfolio</small></span>
       </a>
       <nav aria-label="Primary navigation">
-        <a href="#about">Profile</a>
-        <a href="#artifacts">Selected Work</a>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
         <a href="#outcomes">Outcomes</a>
-        <a class="nav-cta" href="https://github.com/reginald441" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+        <a href="#contact">Contact</a>
       </nav>
     </div>
   </header>
 
   <main>
     <section id="home" class="hero">
-      <div class="hero-glow hero-glow-one"></div>
-      <div class="hero-glow hero-glow-two"></div>
-      <div class="shell hero-grid">
-        <div class="hero-copy-wrap">
-          <p class="kicker"><span></span> CS 499 · Computer Science Capstone</p>
-          <h1>Building thoughtful software from <em>architecture</em> to data.</h1>
-          <p class="hero-lead">I am Reginald Kargbo, a computer science student presenting three capstone artifacts that reflect my growth across mobile software engineering, algorithm design, and database development.</p>
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">CS 499 · Computer Science Capstone</p>
+          <h1>Designing practical software with purpose, structure, and care.</h1>
+          <p class="hero-lead">I am Reginald Kargbo, a computer science student and technology professional. This ePortfolio presents three capstone artifacts that show my growth in software engineering, algorithms and data structures, and database development.</p>
           <div class="hero-actions">
-            <a class="button button-primary" href="#artifacts">Explore the work</a>
-            <a class="button button-ghost" href="#about">About this portfolio</a>
+            <a class="button button-primary" href="#projects">Explore my projects</a>
+            <a class="button button-secondary" href="https://reginaldkargbo.com/" target="_blank" rel="noopener noreferrer">Visit personal website</a>
           </div>
-          <div class="hero-meta" aria-label="Portfolio focus areas">
-            <div><strong>03</strong><span>Selected artifacts</span></div>
-            <div><strong>03</strong><span>Technical domains</span></div>
-            <div><strong>2026</strong><span>Capstone year</span></div>
+          <div class="social-links" aria-label="Professional links">
+            <a href="https://github.com/reginald441" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+            <a href="https://www.linkedin.com/in/reginald-kargbo/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
           </div>
         </div>
-
-        <aside class="hero-panel" aria-label="Current portfolio status">
-          <div class="panel-topline"><span class="live-dot"></span> Portfolio in active development</div>
-          <div class="code-window">
-            <div class="window-bar"><i></i><i></i><i></i><span>capstone-profile.json</span></div>
-            <pre><code><span class="code-key">"student"</span>: <span class="code-value">"Reginald Kargbo"</span>,
-<span class="code-key">"focus"</span>: [
-  <span class="code-value">"Software Engineering"</span>,
-  <span class="code-value">"Algorithms"</span>,
-  <span class="code-value">"Databases"</span>
-],
-<span class="code-key">"approach"</span>: <span class="code-value">"Improve. Test. Explain."</span>,
-<span class="code-key">"status"</span>: <span class="code-accent">"Enhancing artifacts"</span></code></pre>
+        <div class="portrait-wrap">
+          <div class="portrait-frame">
+            <img src="assets/profile.svg" alt="Professional portrait of Reginald Kargbo">
           </div>
-          <p class="panel-note">Each project began in an earlier SNHU course and is being revisited with stronger architecture, performance analysis, security awareness, testing, and documentation.</p>
-        </aside>
+          <div class="portrait-card">
+            <span class="availability-dot"></span>
+            <div><strong>Portfolio in progress</strong><small>Three artifacts being enhanced during CS 499</small></div>
+          </div>
+        </div>
       </div>
     </section>
 
-    <section id="about" class="section section-light">
-      <div class="shell about-grid">
+    <section id="about" class="section about-section">
+      <div class="container about-grid">
         <div>
-          <p class="section-kicker">Professional profile</p>
-          <h2>More than a collection of assignments.</h2>
+          <p class="section-label">About this portfolio</p>
+          <h2>Work that shows how I think—not only what I built.</h2>
         </div>
         <div class="about-copy">
-          <p class="lead-paragraph">This ePortfolio documents how I evaluate existing software, identify meaningful improvements, and connect technical decisions to real users and professional standards.</p>
-          <p>My goal is not simply to present finished code. I want each artifact to show the reasoning behind the enhancement: why the original solution needed improvement, which trade-offs were considered, how the revised design performs, and what the work demonstrates about my growth as a computer science professional.</p>
-          <div class="skill-list" aria-label="Technical strengths">
-            <span>Android</span><span>Java</span><span>C++</span><span>Python</span><span>SQLite</span><span>MongoDB</span><span>Software Architecture</span><span>Algorithm Analysis</span>
+          <p class="lead">Each artifact began as a project from an earlier SNHU course. During the capstone, I am revisiting the work to strengthen architecture, performance, security, testing, usability, and documentation.</p>
+          <p>My goal is to explain the reasoning behind every enhancement: what needed improvement, why the change matters, how the solution is evaluated, and which professional skills the work demonstrates.</p>
+          <div class="skills" aria-label="Technical skills">
+            <span>Java</span><span>Android</span><span>C++</span><span>Python</span><span>SQLite</span><span>MongoDB</span><span>Software Architecture</span><span>Algorithm Analysis</span>
           </div>
         </div>
       </div>
     </section>
 
-    <section id="artifacts" class="section work-section">
-      <div class="shell">
-        <div class="section-heading-row">
+    <section id="projects" class="section projects-section">
+      <div class="container">
+        <div class="section-heading">
           <div>
-            <p class="section-kicker">Selected work</p>
-            <h2>Three artifacts. Three different engineering challenges.</h2>
+            <p class="section-label">Selected capstone work</p>
+            <h2>Three projects. Three engineering perspectives.</h2>
           </div>
-          <p class="section-intro">Each case study highlights the original application, the planned capstone enhancement, and the professional skill the work is intended to demonstrate.</p>
+          <p>These projects are presented honestly as works in progress. Final code, screenshots, narratives, and supporting documentation will be added as each milestone is completed.</p>
         </div>
 
-        <div class="project-stack">
-          <article class="project-row project-mobile">
-            <div class="project-index">01</div>
-            <div class="project-main">
-              <div class="project-heading">
-                <div>
-                  <p class="project-label">Software Design &amp; Engineering</p>
-                  <h3>Android Inventory Tracker</h3>
-                </div>
-                <span class="status-pill status-progress">In progress</span>
-              </div>
-              <p class="project-summary">A mobile inventory application supporting registration, login, item creation, item management, and SQLite persistence. The capstone enhancement focuses on restructuring the application into a maintainable architecture rather than making only visual changes.</p>
-              <div class="project-details">
-                <div>
-                  <h4>Enhancement direction</h4>
-                  <ul>
-                    <li>Refactor toward an MVVM-style architecture.</li>
-                    <li>Separate interface, business logic, and data access.</li>
-                    <li>Strengthen input validation and error handling.</li>
-                    <li>Improve maintainability, accessibility, and testing.</li>
-                  </ul>
-                </div>
-                <div>
-                  <h4>Professional evidence</h4>
-                  <div class="evidence-tags"><span>Architecture</span><span>Mobile UX</span><span>Data persistence</span><span>Maintainability</span></div>
-                </div>
-              </div>
-              <p class="course-line">Original course: CS 360 · Mobile Architecture and Programming</p>
+        <div class="project-list">
+          <article class="project-card accent-blue">
+            <div class="project-top"><span class="project-number">01</span><span class="status status-active">In progress</span></div>
+            <p class="project-category">Software Design &amp; Engineering</p>
+            <h3>Android Inventory Tracker</h3>
+            <p class="project-course">CS 360 · Mobile Architecture and Programming</p>
+            <p class="project-summary">An Android inventory application with registration, login, item management, and SQLite persistence. The enhancement focuses on stronger structure and maintainability rather than only changing the visual interface.</p>
+            <div class="project-columns">
+              <div><h4>Enhancement focus</h4><ul><li>Refactor toward MVVM architecture</li><li>Separate interface, business logic, and data access</li><li>Improve validation and error handling</li><li>Strengthen accessibility, testing, and documentation</li></ul></div>
+              <div><h4>Evidence of growth</h4><div class="tags"><span>Architecture</span><span>Mobile UX</span><span>SQLite</span><span>Maintainability</span></div></div>
             </div>
           </article>
 
-          <article class="project-row project-algorithms">
-            <div class="project-index">02</div>
-            <div class="project-main">
-              <div class="project-heading">
-                <div>
-                  <p class="project-label">Algorithms &amp; Data Structures</p>
-                  <h3>Corner Grocer</h3>
-                </div>
-                <span class="status-pill">Planned</span>
-              </div>
-              <p class="project-summary">A C++ application that reads grocery purchase records, counts item frequency, supports searching, and produces reports. The enhancement adds a deeper data-structure comparison and measurable performance analysis.</p>
-              <div class="project-details">
-                <div>
-                  <h4>Enhancement direction</h4>
-                  <ul>
-                    <li>Implement a self-balancing red-black tree.</li>
-                    <li>Create at least two detailed report formats.</li>
-                    <li>Compare tree performance with the original map-based approach.</li>
-                    <li>Document runtime, space, scaling, and memory trade-offs.</li>
-                  </ul>
-                </div>
-                <div>
-                  <h4>Professional evidence</h4>
-                  <div class="evidence-tags"><span>C++</span><span>Red-black tree</span><span>Complexity analysis</span><span>Reporting</span></div>
-                </div>
-              </div>
-              <p class="course-line">Original course: CS 210 · Programming Languages</p>
+          <article class="project-card accent-gold">
+            <div class="project-top"><span class="project-number">02</span><span class="status">Planned</span></div>
+            <p class="project-category">Algorithms &amp; Data Structures</p>
+            <h3>Corner Grocer</h3>
+            <p class="project-course">CS 210 · Programming Languages</p>
+            <p class="project-summary">A C++ application that reads purchase records, counts item frequency, supports searching, and produces reports. The enhancement adds a deeper data-structure comparison and measurable performance analysis.</p>
+            <div class="project-columns">
+              <div><h4>Enhancement focus</h4><ul><li>Implement a self-balancing red-black tree</li><li>Create at least two detailed reports</li><li>Compare with the original map-based approach</li><li>Analyze runtime, space, scaling, and memory trade-offs</li></ul></div>
+              <div><h4>Evidence of growth</h4><div class="tags"><span>C++</span><span>Red-black tree</span><span>Complexity</span><span>Reporting</span></div></div>
             </div>
           </article>
 
-          <article class="project-row project-database">
-            <div class="project-index">03</div>
-            <div class="project-main">
-              <div class="project-heading">
-                <div>
-                  <p class="project-label">Databases</p>
-                  <h3>Grazioso Salvare Dashboard</h3>
-                </div>
-                <span class="status-pill">Planned</span>
-              </div>
-              <p class="project-summary">A client/server dashboard that connects a user-facing interface to MongoDB for CRUD operations, filtering, and data visualization. The enhancement concentrates on query performance and secure database interaction.</p>
-              <div class="project-details">
-                <div>
-                  <h4>Enhancement direction</h4>
-                  <ul>
-                    <li>Create indexes for frequently queried MongoDB fields.</li>
-                    <li>Improve query performance, filtering, and error handling.</li>
-                    <li>Validate and sanitize user-supplied values.</li>
-                    <li>Reduce NoSQL injection risk and strengthen secure access.</li>
-                  </ul>
-                </div>
-                <div>
-                  <h4>Professional evidence</h4>
-                  <div class="evidence-tags"><span>MongoDB</span><span>Indexing</span><span>Query design</span><span>Security mindset</span></div>
-                </div>
-              </div>
-              <p class="course-line">Original course: CS 340 · Client/Server Development</p>
+          <article class="project-card accent-green">
+            <div class="project-top"><span class="project-number">03</span><span class="status">Planned</span></div>
+            <p class="project-category">Databases</p>
+            <h3>Grazioso Salvare Dashboard</h3>
+            <p class="project-course">CS 340 · Client/Server Development</p>
+            <p class="project-summary">A client/server dashboard connected to MongoDB for CRUD operations, filtering, and visualization. The enhancement centers on query performance, validation, and secure database interaction.</p>
+            <div class="project-columns">
+              <div><h4>Enhancement focus</h4><ul><li>Create indexes for frequently queried fields</li><li>Improve filtering, performance, and error handling</li><li>Validate and sanitize user-supplied values</li><li>Reduce NoSQL injection risk</li></ul></div>
+              <div><h4>Evidence of growth</h4><div class="tags"><span>MongoDB</span><span>Indexing</span><span>Security</span><span>Client/server</span></div></div>
             </div>
           </article>
         </div>
@@ -185,39 +121,30 @@
     </section>
 
     <section id="outcomes" class="section outcomes-section">
-      <div class="shell outcomes-grid">
+      <div class="container outcomes-grid">
         <div>
-          <p class="section-kicker section-kicker-light">Academic alignment</p>
-          <h2>Connecting technical work to professional outcomes.</h2>
-          <p>As the artifacts are completed, each narrative will explain the decisions, trade-offs, testing, and course outcomes demonstrated by the enhancement.</p>
+          <p class="section-label light">CS 499 course outcomes</p>
+          <h2>Connecting technical work to professional practice.</h2>
+          <p>The finished portfolio will connect each enhancement directly to the course outcomes and explain the professional skills demonstrated by the work.</p>
         </div>
         <div class="outcome-list">
-          <div><span>01</span><p>Communicate technical ideas clearly to both technical and nontechnical audiences.</p></div>
-          <div><span>02</span><p>Design and evaluate computing solutions using sound engineering practices.</p></div>
-          <div><span>03</span><p>Apply algorithms, data structures, and database technologies appropriately.</p></div>
-          <div><span>04</span><p>Develop a security mindset that anticipates risks and protects information.</p></div>
+          <div><span>01</span><p>Communicate technical ideas clearly to different audiences.</p></div>
+          <div><span>02</span><p>Design and evaluate computing solutions using professional standards.</p></div>
+          <div><span>03</span><p>Apply algorithmic principles and appropriate data structures.</p></div>
+          <div><span>04</span><p>Use modern tools and technologies to deliver quality solutions.</p></div>
+          <div><span>05</span><p>Develop a security mindset that protects information and resources.</p></div>
         </div>
       </div>
     </section>
 
-    <section class="section closing-section">
-      <div class="shell closing-card">
-        <div>
-          <p class="section-kicker">Current portfolio status</p>
-          <h2>The foundation is live. The evidence is being built.</h2>
-          <p>Final source code, screenshots, enhancement narratives, performance findings, and the professional self-assessment will be added as the remaining CS 499 milestones are completed.</p>
-        </div>
-        <a class="button button-dark" href="https://github.com/reginald441" target="_blank" rel="noopener noreferrer">View GitHub profile ↗</a>
+    <section id="contact" class="section contact-section">
+      <div class="container contact-card">
+        <div><p class="section-label">Professional connection</p><h2>Learn more about my work.</h2><p>Visit my personal website, GitHub, or LinkedIn profile for additional projects and professional information.</p></div>
+        <div class="contact-actions"><a class="button button-primary" href="https://reginaldkargbo.com/" target="_blank" rel="noopener noreferrer">Personal website</a><a class="button button-outline" href="https://www.linkedin.com/in/reginald-kargbo/" target="_blank" rel="noopener noreferrer">LinkedIn</a><a class="button button-outline" href="https://github.com/reginald441" target="_blank" rel="noopener noreferrer">GitHub</a></div>
       </div>
     </section>
   </main>
 
-  <footer>
-    <div class="shell footer-wrap">
-      <div><strong>Reginald Kargbo</strong><span>CS 499 Computer Science Capstone</span></div>
-      <p>Designed and developed for my 2026 ePortfolio.</p>
-      <a href="#home">Back to top ↑</a>
-    </div>
-  </footer>
+  <footer><div class="container footer-wrap"><p>© 2026 Reginald Kargbo · CS 499 Computer Science Capstone</p><a href="#home">Back to top ↑</a></div></footer>
 </body>
 </html>
