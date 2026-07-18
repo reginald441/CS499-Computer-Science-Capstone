@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical" android:padding="32dp">
+ <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="SMS Notification Settings" android:textSize="26sp" android:textStyle="bold" android:gravity="center" android:paddingBottom="20dp"/>
+ <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="SMS permission is optional. The inventory features continue to work if permission is denied." android:paddingBottom="16dp"/>
+ <TextView android:id="@+id/smsPermissionStatus" android:layout_width="match_parent" android:layout_height="wrap_content" android:textStyle="bold" android:paddingBottom="16dp"/>
+ <Button android:id="@+id/requestSmsPermissionButton" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Request SMS Permission" android:textAllCaps="false"/>
+ <Button android:id="@+id/backToInventoryButton" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Back to Inventory" android:textAllCaps="false"/>
+</LinearLayout>
