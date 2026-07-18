@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Android Inventory Tracker case study by Reginald Kargbo">
+<title>Android Inventory Tracker | Reginald Kargbo</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:wght@600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="site-header"><div class="container nav">
+<a class="brand" href="index.html#home"><span>RK</span><div><strong>Reginald Kargbo</strong><small>Computer Science ePortfolio</small></div></a>
+<nav><a href="index.html#about">About</a><a href="index.html#projects">Projects</a><a href="index.html#outcomes">Outcomes</a><a href="index.html#contact">Contact</a></nav>
+</div></header>
+<main>
+<section class="case-hero"><div class="container case-hero-grid">
+<div><p class="eyebrow">Software Design & Engineering · CS 499</p><h1>Android Inventory Tracker</h1><p class="lead">A mobile inventory application enhanced to demonstrate stronger software architecture, safer data handling, improved validation, and more maintainable Android development practices.</p><div class="actions"><a class="btn primary" href="index.html#projects">Back to all projects</a><a class="btn secondary" href="https://github.com/reginald441/CS499-Computer-Science-Capstone" target="_blank">View ePortfolio repository</a></div></div>
+<aside class="case-summary"><dl><dt>Original course</dt><dd>CS 360 · Mobile Architecture and Programming</dd><dt>Category</dt><dd>Software Design and Engineering</dd><dt>Technologies</dt><dd>Java, Android Studio, SQLite, XML, Gradle</dd><dt>Status</dt><dd>Milestone Two submitted for instructor review</dd></dl></aside>
+</div></section>
+<section class="case-section"><div class="container case-grid"><div><p class="label">Project overview</p><h2>From a working application to a stronger software product.</h2></div><div class="case-copy"><p class="large">The Android Inventory Tracker supports account creation, user login, inventory management, quantity updates, record deletion, SQLite persistence, and SMS-permission handling.</p><p>I selected this artifact because it brings together several areas of software development in one application. It demonstrates mobile user-interface design, Java programming, local database integration, validation, security considerations, and the responsibility of maintaining data across multiple screens and user actions.</p><p>The original version successfully demonstrated the required functionality, but much of the interface, navigation, business logic, validation, and database access were concentrated in a single activity. The capstone enhancement focused on separating responsibilities and making the project easier to understand, test, extend, and maintain.</p></div></div></section>
+<section class="case-section alt"><div class="container"><div class="section-head"><div><p class="label">Enhancement work</p><h2>Key software engineering improvements</h2></div><p>The milestone enhancement follows the architectural and technical direction developed during the CS 499 code review and instructor feedback.</p></div><div class="feature-list">
+<div class="feature-card"><h3>MVVM-style separation</h3><p>Organized the application into clearer models, repositories, ViewModels, utilities, interface components, and XML layouts.</p></div>
+<div class="feature-card"><h3>Safer authentication</h3><p>Added salted password hashing and support for migrating legacy plain-text passwords.</p></div>
+<div class="feature-card"><h3>User-specific inventory</h3><p>Associated inventory records with the authenticated user so different accounts do not share the same data.</p></div>
+<div class="feature-card"><h3>Improved validation</h3><p>Strengthened empty-field checks, safer quantity parsing, error messages, and handling of invalid input.</p></div>
+<div class="feature-card"><h3>Complete editing</h3><p>Expanded item management beyond simple quantity increases by supporting meaningful record updates and delete confirmation.</p></div>
+<div class="feature-card"><h3>Testing and documentation</h3><p>Added validation unit tests, an enhancement summary, a README, and testing instructions for review and future maintenance.</p></div>
+</div></div></section>
+<section class="case-section"><div class="container case-grid"><div><p class="label">Learning and reflection</p><h2>Engineering decisions supported by clear reasoning.</h2></div><div class="case-copy"><p>The enhancement process reinforced that software quality depends on more than whether an application runs. A maintainable system needs clear boundaries between interface code, business rules, and data access. Separating those responsibilities reduces duplication, makes problems easier to isolate, and supports future testing and expansion.</p><p>One of the most important challenges was preserving the original behavior while restructuring the project. Changes to authentication, user-specific data, database operations, and screen flow had to work together without breaking account creation or inventory persistence. The project also highlighted the need to treat validation and security as part of the design instead of adding them only after the main functionality is complete.</p><div class="milestone-note"><strong>Portfolio status:</strong> The milestone package has been submitted for instructor review. After feedback is received and final corrections are completed, the approved source package and final narrative can be published as portfolio downloads.</div></div></div></section>
+<section class="case-section alt"><div class="container download-panel"><div><p class="label">Milestone package</p><h2>Submission materials prepared</h2><p>The package includes the preserved original project, the enhanced Android project, README documentation, testing instructions, an enhancement summary, and the accompanying narrative.</p></div><div class="contact-actions"><a class="btn primary" href="index.html#projects">Return to projects</a><a class="btn secondary" href="https://github.com/reginald441" target="_blank">Visit GitHub</a></div></div></section>
+</main>
+<footer><div class="container foot"><span>© 2026 Reginald Kargbo</span><span>Android Inventory Tracker Case Study</span><a href="#top">Back to top ↑</a></div></footer>
+</body></html>
