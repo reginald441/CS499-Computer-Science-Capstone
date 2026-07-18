@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+ <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="32dp">
+  <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Create Account" android:textSize="28sp" android:textStyle="bold" android:gravity="center" android:paddingBottom="20dp"/>
+  <EditText android:id="@+id/newUsernameInput" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Username" android:inputType="text"/>
+  <EditText android:id="@+id/newPasswordInput" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Password (8+ characters with a letter and number)" android:inputType="textPassword"/>
+  <Button android:id="@+id/saveAccountButton" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Save Account" android:textAllCaps="false"/>
+  <Button android:id="@+id/backToLoginButton" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Back to Login" android:textAllCaps="false"/>
+ </LinearLayout>
+</ScrollView>
