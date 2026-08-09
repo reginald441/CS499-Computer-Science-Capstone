@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Corner Grocer algorithms and data structures case study by Reginald Kargbo">
+<title>Corner Grocer | Reginald Kargbo</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:wght@600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="site-header"><div class="container nav">
+<a class="brand" href="index.html#home"><span>RK</span><div><strong>Reginald Kargbo</strong><small>Computer Science ePortfolio</small></div></a>
+<nav><a href="index.html#about">About</a><a href="index.html#projects">Projects</a><a href="index.html#outcomes">Outcomes</a><a href="index.html#contact">Contact</a></nav>
+</div></header>
+<main>
+<section class="case-hero"><div class="container case-hero-grid">
+<div><p class="eyebrow">Algorithms & Data Structures · CS 499</p><h1>Corner Grocer</h1><p class="lead">A C++ grocery-frequency application enhanced to demonstrate stronger data-structure design, efficient searching, flexible reporting, and explicit analysis of runtime, space, and scalability trade-offs.</p><div class="actions"><a class="btn primary" href="https://github.com/reginald441/corner-grocer-cpp" target="_blank" rel="noopener noreferrer">Browse complete source</a><a class="btn secondary" href="index.html#projects">Back to all projects</a></div></div>
+<aside class="case-summary"><dl><dt>Original course</dt><dd>CS 210 · Programming Languages</dd><dt>Category</dt><dd>Algorithms and Data Structures</dd><dt>Technologies</dt><dd>C++, file I/O, object-oriented programming, red-black tree</dd><dt>Status</dt><dd>Enhancement completed and published</dd></dl></aside>
+</div></section>
+<section class="case-section"><div class="container case-grid"><div><p class="label">Project overview</p><h2>From frequency counting to deeper algorithmic analysis.</h2></div><div class="case-copy"><p class="large">Corner Grocer processes grocery purchase records, counts how often items appear, supports item searches, and produces frequency-based reports and histograms.</p><p>I selected this artifact because the original application already solved a clear real-world problem while giving me an opportunity to demonstrate how the choice of a data structure changes the way a program stores, searches, and reports information.</p><p>The original version emphasized file input/output, classes, functions, and straightforward frequency counting. For the capstone, I expanded the project so the enhancement would show more than functional C++ code. The revised work focuses on algorithmic design decisions, balancing, searching, reporting, complexity, and measurable trade-offs between approaches.</p></div></div></section>
+<section class="case-section alt"><div class="container"><div class="section-head"><div><p class="label">Enhancement work</p><h2>Key algorithms and data-structure improvements</h2></div><p>The enhancement was designed to demonstrate both implementation skill and the reasoning behind selecting and evaluating a data structure.</p></div><div class="feature-list">
+<div class="feature-card"><h3>Self-balancing red-black tree</h3><p>Replaced a simpler map-centered approach with a custom red-black tree using sentinel nodes, left and right rotations, color balancing, and tree invariants.</p></div>
+<div class="feature-card"><h3>Efficient searching</h3><p>Organized item-frequency records so searches can follow the tree structure instead of relying on a purely sequential scan.</p></div>
+<div class="feature-card"><h3>Normalized item handling</h3><p>Improved consistency for item searching and comparisons by normalizing strings before lookup and reporting.</p></div>
+<div class="feature-card"><h3>Flexible reporting</h3><p>Expanded the output beyond a single report style and used secondary ordering where appropriate for readable frequency-based results.</p></div>
+<div class="feature-card"><h3>Complexity trade-offs</h3><p>Compared runtime, memory, scaling behavior, and Big-O implications so the enhancement explains why the chosen structure is appropriate instead of only showing that it works.</p></div>
+<div class="feature-card"><h3>Testing and benchmarking</h3><p>Used tests and empirical performance comparisons to evaluate correctness, balancing behavior, searching, sorting, and reporting under different workloads.</p></div>
+</div></div></section>
+<section class="case-section"><div class="container case-grid"><div><p class="label">What I learned</p><h2>Choosing a structure is an engineering decision.</h2></div><div class="case-copy"><p class="large">This enhancement strengthened my understanding that a working solution and a well-evaluated solution are not always the same thing.</p><p>Implementing the red-black tree required careful handling of node relationships, rotations, coloring rules, and edge cases. It also made the trade-off between using a standard library abstraction and implementing a lower-level structure much more visible.</p><p>The project helped me connect theoretical complexity to practical behavior. I learned to explain how search, insertion, ordering, memory use, and scalability affect design choices and to support those explanations with both Big-O reasoning and measured results.</p><div class="milestone-note"><strong>Course outcome connection:</strong> The artifact demonstrates the design and evaluation of computing solutions using algorithmic principles while managing trade-offs involved in data-structure and software-design choices.</div></div></div></section>
+<section class="case-section alt"><div class="container download-panel"><div><p class="label">Explore the project</p><h2>Open the code and documentation</h2><p>Use the links to inspect the C++ implementation, review the project documentation, and compare the project with the other artifacts in the CS 499 ePortfolio.</p></div><div class="contact-actions"><a class="btn primary" href="https://github.com/reginald441/corner-grocer-cpp" target="_blank" rel="noopener noreferrer">Browse source code</a><a class="btn secondary" href="https://github.com/reginald441/corner-grocer-cpp/blob/main/README.md" target="_blank" rel="noopener noreferrer">Open README</a><a class="btn secondary" href="https://github.com/reginald441/corner-grocer-cpp/archive/refs/heads/main.zip">Download source ZIP</a><a class="text-link" href="index.html#projects">View all capstone artifacts →</a></div></div></section>
+</main>
+<footer><div class="container foot"><span>© 2026 Reginald Kargbo</span><span>Corner Grocer Case Study</span><a href="#top">Back to top ↑</a></div></footer>
+</body></html>
